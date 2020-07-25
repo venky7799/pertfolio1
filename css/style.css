@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+*,
+:after,
+:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+:root {
+  --main-font: "Montserrat-Semi-bold", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.cursor {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid rgb(253, 253, 253);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: 1;
+  /* backdrop-filter: grayscale(); */
+}
+
+.link-grow {
+  transform: scale(1.5);
+  background: rgba(10, 10, 10, 0.473);
+}
+.viewports {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.scroll-container {
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+.content {
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.content {
+  height: 100% !important;
+}
+
+header {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+
+.menu {
+  font-size: 0.75rem;
+  line-height: 2;
+  color: white;
+}
+.menu p {
+  z-index: 2;
+  color: white;
+  font-size: 0.8rem;
+}
+.menu a {
+  color: white;
+}
+.menuright {
+  padding-left: 5rem;
+}
+
+.menupara {
+  padding-top: 1rem;
+  padding-right: 3rem;
+  line-height: 2;
+  font-size: 1rem;
+}
+
+.mainmiddle {
+  font-weight: 600;
+  line-height: 2;
+  font-size: 140%;
+  justify-content: space-around;
+}
+
+.ido {
+  padding-top: 20rem;
+}
+
+main {
+  position: relative;
+}
+
+.mainmiddle-1 {
+  width: 34.2rem;
+  font-size: 2rem;
+  padding-top: 8rem;
+}
+
+.rect-1 {
+  width: 750px;
+  height: 100vh;
+  top: 30px;
+  float: right;
+  background: #000000;
+  text-align: center;
+  position: relative;
+  z-index: -3;
+}
+.rect-1 img {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.rect-1img {
+  width: 60%;
+  margin-top: 2rem;
+}
+.mainmiddle img {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 8rem;
+  width: 5%;
+  animation: float 0.99s ease-in-out infinite;
+}
+
+/*===================== first section==================*/
+.site1main {
+  padding-top: 8rem;
+}
+.site-1 {
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+.site-1:after {
+  content: "";
+  position: absolute;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  margin-left: -4.5rem;
+  height: 0.1rem;
+  background: rgba(255, 255, 255, 0.692);
+  width: 15%;
+}
+.comment1 {
+  margin-top: -0.9rem;
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.site1pic {
+  width: 500px;
+  height: 550px;
+
+  background-color: #a608ee;
+}
+.site1pic img {
+  filter: grayscale(50%);
+  width: 100%;
+}
+
+.site2comments {
+  width: 40rem;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 5rem;
+  font-family: var(--main-font);
+}
+
+.site2comments p {
+  padding-top: 8rem;
+}
+
+/* ===============Second section================= */
+.section2 {
+  padding: 5rem;
+}
+
+.section2pic {
+  width: 500px;
+  height: 500px;
+  background-color: #a608ee;
+}
+
+.section2pic img {
+  width: 100%;
+  filter: grayscale(50%);
+}
+
+.section2content {
+  float: left;
+}
+
+.section2comment {
+  width: 37.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 10rem;
+  font-family: var(--main-font);
+}
+.section2site {
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+.section2tag {
+  margin-top: -0.6rem;
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.section2site:after {
+  content: "";
+  position: absolute;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  margin-left: -7rem;
+  height: 0.1rem;
+  background: rgba(255, 255, 255, 0.692);
+  width: 20%;
+}
+/* ===============End of Second section================= */
+
+/* =========================Start contact form==================== */
+
+.section3 {
+  text-align: center;
+  position: relative;
+}
+.section3 img {
+  width: 100%;
+  filter: grayscale(50%);
+}
+
+.section3 .section3rec {
+  width: 500px;
+  height: 550px;
+  background-color: #a608ee;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.section3 .section3content {
+  position: absolute;
+  left: 15%;
+  top: 11.71875vw;
+  white-space: nowrap;
+  z-index: -1;
+}
+
+.section3 .section3content h3 {
+  font-family: var(--main-font);
+  font-size: 10rem;
+  color: rgb(255, 255, 255);
+}
+
+.section3overly2 {
+  position: absolute;
+  left: 15%;
+  top: 11.71875vw;
+  white-space: nowrap;
+  -webkit-text-stroke-width: 3px;
+
+  -webkit-text-stroke-color: rgb(247, 247, 247);
+
+  z-index: 1;
+}
+
+.section3overly2 h3 {
+  font-family: var(--main-font);
+  font-size: 10rem;
+  color: rgba(255, 255, 255, 0);
+}
+
+/* =========================End contact form==================== */
+.websiteicons {
+  text-align: center;
+  text-justify: center;
+}
+
+.text-center a {
+  display: inline-block;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  color: #f8f8f8;
+  text-decoration: underline;
+  margin: 0 4rem 4rem;
+  width: 5rem;
+}
+
+.elivate {
+  position: relative;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -80%);
+  }
+  50% {
+    transform: translate(-50%, -54%);
+  }
+  100% {
+    transform: translate(-50%, -80%);
+  }
+}
+
+/* ======================================================= */
+
+@media only screen and (max-width: 340px) {
+  body {
+    width: 100%;
+  }
+  .menu,
+  .menures {
+    text-align: center;
+    display: flex;
+    padding-top: 2%;
+  }
+  .rect-1img {
+    text-align: center;
+    width: 50%;
+    margin-right: -30rem;
+  }
+  .mainmiddle-1 {
+    font-size: 1rem;
+  }
+  .site1pic {
+    width: 100%;
+    height: 100%;
+  }
+  .site2comments {
+    width: 100%;
+  }
+  .site2comments p {
+    font-size: 1.5rem;
+  }
+  .section2comment {
+    display: inline-block;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .section2 {
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .section2comment p {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .section2pic {
+    width: 100%;
+    height: 100%;
+  }
+  .section3 {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .section3rec {
+    width: 100%;
+    height: 80%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .section3overly2 h3 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    text-justify: center;
+  }
+}
