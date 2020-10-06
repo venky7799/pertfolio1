@@ -18,6 +18,8 @@ body {
   color: white;
   overflow-y: scroll;
   overflow-x: hidden;
+  height: 20000px;
+
 }
 .cursor {
   position: absolute;
@@ -328,9 +330,40 @@ main {
   }
 }
 
+
+
+
+
+
+/* ------------------------------ start section 3--------------------------- */
+
+.site3pic img{
+  width: 100%;
+}
+.site3seccomments{
+ margin-top: 15rem;
+ width: 35rem;
+}
+
+.site3seccomments p{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.section-3{
+  margin-bottom: 2rem;
+}
+/* ------------------------------ end section 3--------------------------- */
+
+
+
+
+
+
+
+
 /* ======================================================= */
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 340px) ,  (max-width: 400px){
   body {
     width: 100%;
   }
