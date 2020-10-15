@@ -7,7 +7,7 @@ let navLinks3 = document.querySelectorAll(".social a");
 window.addEventListener("mousemove", cursor);
 
 function cursor(e) {
-  console.log(e);
+  /*console.log(e);*/
   mouseCursor.style.top = e.pageY + "px";
   mouseCursor.style.left = e.pageX + "px";
 }
@@ -137,3 +137,20 @@ var scroller = new SmoothScroll({
   scrollEase: 0.05,
   maxOffset: 500,
 });
+
+
+class Person {
+  constructor (){
+      this.name = 'Max';
+  }
+  asdf(){
+      
+      console.log(this.name);
+  }
+}
+
+const all = new Person();
+all.asdf();
+
+
+
